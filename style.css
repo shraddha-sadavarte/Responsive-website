@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(55, 45, 237);
+    border-bottom: 2px solid rgb(100, 56, 231);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.nav h4{
+    font-size: 1.5vw;
+}
+
+.nav i{
+    font-size: 1vw;
+    font-weight: 800;
+    display: none;
+}
+
+.content{
+    height: calc(100% - 100px); 
+    /* 100px that we give to navbar */
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    padding: 9vw 4vw;
+    /* 7vw is for bottom top and 8vw is for left right */
+}
+
+.left h1{
+    font-size: 4vw;
+}
+
+.left h1 span{
+    color: rgb(61, 33, 200);
+}
+
+.left p{
+    font-size: 1.2vw;
+    font-weight: 700;
+    color:rgb(74, 30, 186);
+    width: 80%;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+button{
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color: rgb(83, 50, 253);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.right{
+    height: 50%;
+    width: 45%;
+    padding: 5vw 4vw;
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .nav{
+        padding: 0 5vw;
+        height: 60px;
+    }
+
+    .nav h2{
+        font-size: 6vw;
+        color: black;
+    }
+
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+
+    .nav i{
+        display: block;
+        font-size: 5vw;
+        color: black;
+    }
+
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        height: 60%;
+        padding: 4vw 6vw;
+    }
+
+    .right{
+        width: 100%;
+        height: 40%;
+    }
+
+    .left h1{
+        font-size: 10vw;
+    }
+
+    .left p{
+        font-size: 3vw;
+        width: 100%;
+        margin-top: 5vw;
+    }
+
+    button{
+        padding: 2vw 3vw;
+        font-size: 3vw;
+    }
+
+    .right img{
+        height: 100%;
+        width: 100%;
+    }
+
+
+}
